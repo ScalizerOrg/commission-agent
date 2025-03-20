@@ -140,5 +140,6 @@ class TestSaleCommission(TestAccountCommission):
         inv_line = sale_order.mapped("invoice_ids.invoice_line_ids")[0]
         self.assertTrue(
             inv_line.agent_ids[0].commission_id, self.commission_section_invoice
+            if inv_line.agent_ids else False
         )
         self.assertTrue(inv_line.agent_ids[0].agent_id, self.agent_monthly)
