@@ -9,7 +9,7 @@
                 expr="//field[@name='order_line']/list//field[@name='price_subtotal']"
                 position="after"
             >
-                <field name="commission_free" column_invisible="1" />
+<!--                <field name="commission_free" column_invisible="1" />-->
                 <field name="invoice_lines" column_invisible="1" />
                 <button
                     name="button_edit_agents"
