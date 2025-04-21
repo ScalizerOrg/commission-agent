@@ -5,7 +5,7 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form" />
         <field name="arch" type="xml">
-            <xpath
+           <!-- <xpath
                 expr="//field[@name='order_line']/list//field[@name='price_subtotal']"
                 position="after"
             >
@@ -17,7 +17,7 @@
                     type="object"
                 />
                 <field name="commission_status" optional="show" />
-            </xpath>
+            </xpath>-->
             <field name="tax_totals" position="after">
                 <field
                     name="commission_total"
