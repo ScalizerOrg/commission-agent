@@ -10,6 +10,7 @@
     "depends": [
         "sale",
         "account_commission",
+        "sale_project"
     ],
     "website": "https://github.com/OCA/commission",
     "maintainers": ["pedrobaeza"],
